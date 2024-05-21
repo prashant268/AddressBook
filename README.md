@@ -26,7 +26,7 @@ A FastAPI application for managing addresses with SQLite. Supports creating, upd
 
 3. Run the application:
     ```sh
-    uvicorn app.main:app --reload
+    uvicorn app:app --reload or python run app.py
     ```
 
 4. Access the API documentation at `http://127.0.0.1:8000/docs`
@@ -38,3 +38,4 @@ A FastAPI application for managing addresses with SQLite. Supports creating, upd
 2. cd addressbook
 sudo docker build -t 'address_api' .
 sudo docker run -dp 8000:8000 -t address_api
+Access the API documentation at `http://0.0.0.0:8000/docs`
